@@ -1,0 +1,147 @@
+/*----------------------------------------------------
+_common.scss
+----------------------------------------------------*/
+// Inview用
+.fadein {
+  opacity: 0;
+  -webkit-transform: translate(0, 30px);
+  transform: translate(0, 30px);
+  -webkit-transition: all 1.6s;
+  transition: all 1.6s;
+
+  &.scrollin {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+}
+
+// Slick用
+.moving {
+  animation: （fadezoom 8s 0s forwards;
+}
+.moving {
+  @keyframes fadezoom {
+    0% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+// フォント
+.roboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bold {
+  font-weight: bold;
+}
+
+// 上下左右中央
+.ab-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+// 上下中央
+.ab-updown {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+// 左右中央
+.ab-leftright {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
+
+.wrapper {
+  // padding: 0 15px;
+
+  .container {
+    padding-top: 83px;
+  }
+  .wrap {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+
+    .title {
+
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .wrapper {
+    // padding: 0 15px;
+  
+    .top {
+      .wrap {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+  
+        .title {
+
+        }
+      }
+    }
+    .under {
+      .wrap {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+  
+        .title {
+
+        }
+      }
+    }
+  }
+}
+
+.sp-only {
+  display: none;
+}
+.sp-br {
+  display: none;
+}
+
+@media screen and (max-width: 870px) {
+  .pc-only {
+    display: none !important;
+  }
+  .pc-br {
+    display: none !important;
+  }
+  .sp-only {
+    display: block !important;
+  }
+  .sp-br {
+    display: block !important;
+  }
+}
